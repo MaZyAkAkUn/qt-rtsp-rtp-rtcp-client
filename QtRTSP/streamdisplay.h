@@ -2,6 +2,8 @@
 #define STREAMDISPLAY_H
 
 #include <QWidget>
+#include <QPainter>
+
 
 class StreamDisplay : public QWidget
 {

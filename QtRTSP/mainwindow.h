@@ -3,6 +3,12 @@
 
 #include <QMainWindow>
 #include <QVBoxLayout>
+#include <QLineEdit>
+#include <QPushButton>
+
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QNetworkRequest>
 
 #include "streamer.h"
 #include "streamdisplay.h"
@@ -18,5 +24,11 @@ private:
     Streamer* streamer;
     StreamDisplay* streamDisplay;
     QVBoxLayout* ly_main;
+
+    QLineEdit* le_streamUrl;
+    QPushButton* pb_connectToStream;
+
+private slots:
+    void connectToStream();
 };
 #endif // MAINWINDOW_H
